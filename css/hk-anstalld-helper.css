@@ -1,10 +1,4 @@
-a:hover {
-  text-decoration: underline!important;
-}
 
-h1, h2, h3, h4, h5 {
-  display: inline-block;
-}
 
 .tooltip-inner {
     text-align: left;
@@ -43,87 +37,6 @@ h1, h2, h3, h4, h5 {
   width: 20px;
 }
 
-.blue-bg-white-text .tooltip-icon:after {
-  background: rgba(255,255,255,0.9);
-  color: #3d6a98;
-}
-
-
-/* special style classes to overide Divi manually */
-.red-bg-white-text {
-  background-color: #a41d30!important;
-  opacity: 0.85;
-}
-.red-bg-white-text,
-.red-bg-white-text .et_pb_toggle_title:before,
-.red-bg-white-text div,
-.red-bg-white-text p,
-.red-bg-white-text span,
-.red-bg-white-text a,
-.red-bg-white-text h1,
-.red-bg-white-text h2,
-.red-bg-white-text h3,
-.red-bg-white-text h4,
-.red-bg-white-text h5 {
-  color: white!important;
-}
-
-.blue-bg-white-text {
-  background-color: #3d6a98!important;
-  opacity: 0.85;
-}
-.blue-bg-white-text,
-.blue-bg-white-text .et_pb_toggle_title:before,
-.blue-bg-white-text div,
-.blue-bg-white-text p,
-.blue-bg-white-text span,
-.blue-bg-white-text a,
-.blue-bg-white-text h1,
-.blue-bg-white-text h2,
-.blue-bg-white-text h3,
-.blue-bg-white-text h4,
-.blue-bg-white-text h5 {
-  color: white!important;
-}
-.white-bg {
-  background-color: white;
-  opacity: 0.9;
-}
-
-
-/* Divi element */
-.et_pb_column,
-.et_pb_text {
-  border-radius: 4px;
-}
-.et_pb_button {
-    width: 100%;
-    color: white;
-    /*height: 90px;*/
-}
-.et_pb_column .et_pb_toggle_open,
-.et_pb_column .et_pb_toggle {
-  background: transparent;
-  border: 0!important;
-  border-top: 1px dotted gray!important;
-  margin-bottom: 0!important;
-}
-.et_pb_toggle br {
-   display: none;
-}
-.et_pb_toggle_title {
-  width: 100%;
-}
-.et_pb_toggle a {
-  /*display: block;*/
-}
-.et_pb_button:hover {
-  color: white;
-}
-.et_pb_toggle h5 {
-  font-size: 14px!important;
-  line-height: 20px;
-}
 
 
 /*
