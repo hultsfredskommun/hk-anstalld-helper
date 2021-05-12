@@ -1,6 +1,6 @@
 <?php
-add_action('admin_init', 'hkah_options_init' );
-add_action('admin_menu', 'hkah_options_add_page');
+//add_action('admin_init', 'hkah_options_init' );
+//add_action('admin_menu', 'hkah_options_add_page');
 
 // Init plugin options to white list our options
 function hkah_options_init() {
@@ -30,14 +30,8 @@ function hkah_options_do_page() {
 			//echo "<br>enable_cron  : " . $options["enable_cron"];
 			//echo "<br>update_products  : " . $options["update_products"];
 			?>
-			<p><label for="hkah_options[hkah_iframe_src]">Iframe att bädda in</label><br/>
-			<input size="80" type="text" name="hkah_options[hkah_iframe_src]" value="<?php echo $options['hkah_iframe_src']; ?>" /></p>
-			<p><label for="hkah_options[hkah_iframe_src]">Avatar / Ikon</label><br/>
-			<input size="80" type="text" name="hkah_options[hkah_avatar_src]" value="<?php echo $options['hkah_avatar_src']; ?>" /></p>
-			<p><label for="hkah_options[hkah_iframe_src]">Chat-text (som alt-text eller om ingen avatar är inlagd)</label><br/>
-			<input size="80" type="text" name="hkah_options[hkah_button_title]" value="<?php echo $options['hkah_button_title']; ?>" /></p>
-			<p><label for="hkah_options[hkah_bubble_text]">Bubble text</label><br/>
-			<input size="80" type="text" name="hkah_options[hkah_bubble_text]" value="<?php echo $options['hkah_bubble_text']; ?>" /></p>
+			<p><label for="hkah_options[hkah_test_text]">Test text</label><br/>
+			<input size="80" type="text" name="hkah_options[hkah_test_text]" value="<?php echo $options['hkah_test_text']; ?>" /></p>
 
 
 			<?php submit_button(); ?>

@@ -97,7 +97,7 @@ function hkah_enqueue_script() {
   }
   $user = $hkUser->getUserObject();
 
-	$options = get_option('hkah_options');
+	//$options = get_option('hkah_options');
 
   wp_enqueue_style( 'hkah_bootstrap_style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
   wp_register_script( 'hkah_bootstrap_script', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js' , array('jquery'));
@@ -109,10 +109,7 @@ function hkah_enqueue_script() {
 
 	$translation_array = array(
 		'title'           => __( 'Hultsfreds kommun',             'hkah-plugin' ),
-		'button_title'    => __( $options['hkah_button_title'],   'hkah-plugin' ),
-		'iframe_src'      => __( $options['hkah_iframe_src'],     'hkah-plugin' ),
-    'avatar_src'      => __( $options['hkah_avatar_src'],     'hkah-plugin' ),
-    'bubble_text'     => __( $options['hkah_bubble_text'],    'hkah-plugin' ),
+    //'test_text'     => __( $options['hkah_test_text'],    'hkah-plugin' ),
     'user_title'      => __( $user['title'],                  'hkah-plugin' ),
     'user_office'     => __( $user['office'],                 'hkah-plugin' ),
     'user_department' => __( $user['department'],             'hkah-plugin' ),
