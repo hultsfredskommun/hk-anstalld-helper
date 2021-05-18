@@ -22,16 +22,16 @@ function hkah_office_shortcode_func( $atts ) {
 		'target' => '_blank',
 	), $atts, 'office' );
 
-	$ret = '<a class="hk-office-logo-wrapper rek-link-listener" data-rek-beskrivning="Office" href="' . $atts['link'] . '" target="' . $atts['target'] . '"><span class="hk-' . $atts['icon'] . ' hk-office-logo"></span><span class="hk-office-text">' . $atts['name'] . '</span></a>';
+	$ret = '<a class="hk-office-logo-wrapper" href="' . $atts['link'] . '" target="' . $atts['target'] . '"><span class="hk-' . $atts['icon'] . ' hk-office-logo"></span><span class="hk-office-text">' . $atts['name'] . '</span></a>';
   return $ret;
 }
 add_shortcode( 'office', 'hkah_office_shortcode_func' );
 
 function hkah_office_links_shortcode_func( $atts ) {
 	$office_array = hkah_office_data();
-	$ret = "<div class='rek-link-listener' data-rek-pagetype='office'>";
+	$ret = "<div>";
 	foreach ($office_array as $key => $value) {
-		$ret .= '<a class="hk-office-logo-wrapper hk-' . $value['icon'] . '-tooltip rek-link-listener" data-rek-beskrivning="' .  $value['icon'] . '" href="' . $value['link'] . '" target="' . $value['target'] . '"><span class="hk-' . $value['icon'] . ' hk-office-logo"></span><span class="hk-office-text">' . $value['name'] . '</span></a>';
+		$ret .= '<a class="hk-office-logo-wrapper hk-' . $value['icon'] . '-tooltip" href="' . $value['link'] . '" target="' . $value['target'] . '"><span class="hk-' . $value['icon'] . ' hk-office-logo"></span><span class="hk-office-text">' . $value['name'] . '</span></a>';
 
 	}
 	$ret .= "</div>";
@@ -47,11 +47,11 @@ function hkah_opene_links_shortcode_func( $atts ) {
 	//$jsonarray = json_decode($jsondata);
 
 
-	$ret = "<div class='opene-wrapper rek-link-listener' data-rek-pagetype='opene'>Bara test";
+	$ret = "<div class='opene-wrapper'>Bara test";
 
 	//$ret .= print_r($jsonarray,1);
 	/*foreach ($office_array as $key => $value) {
-		$ret .= '<a class="hk-office-logo-wrapper hk-' . $value['icon'] . '-tooltip rek-link-listener" data-rek-beskrivning="' .  $value['icon'] . '" href="' . $value['link'] . '" target="' . $value['target'] . '"><span class="hk-' . $value['icon'] . ' hk-office-logo"></span><span class="hk-office-text">' . $value['name'] . '</span></a>';
+		$ret .= '<a class="hk-office-logo-wrapper hk-' . $value['icon'] . '-tooltip" href="' . $value['link'] . '" target="' . $value['target'] . '"><span class="hk-' . $value['icon'] . ' hk-office-logo"></span><span class="hk-office-text">' . $value['name'] . '</span></a>';
 
 	}*/
 	$ret .= "</div>";

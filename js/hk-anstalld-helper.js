@@ -42,11 +42,5 @@ jQuery(function($) {
 			$('[data-toggle="tooltip"]').tooltip()
 		} // end if home
 
-		// add rek.ai data about user
-		localStorage.setItem('rekcsf1', hkah_js_object['user_title']);
-		localStorage.setItem('rekcsf2', hkah_js_object['user_office']);
-		localStorage.setItem('rekcsf3', hkah_js_object['user_department']);
-		localStorage.setItem('rekcsf4', hkah_js_object['user_company']);
-
 	});
 });
